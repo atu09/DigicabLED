@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.digicab.led"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String", "device_register", "\"api/device_register\""
+        buildConfigField "String", "advertise_view", "\"api/advertise_view\""
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "base_url", "\"http://dashboard.mydigicab.com/\""
+            buildConfigField "String", "media_url", "\"http://dashboard.mydigicab.com/storage/uploads/\""
+
+            /*buildConfigField "String", "base_url", "\"http://3.14.80.185/mydigicab/public/\""
+            buildConfigField "String", "media_url", "\"http://3.14.80.185/mydigicab/public/storage/uploads/\""*/
+        }
+        release {
+            buildConfigField "String", "base_url", "\"http://dashboard.mydigicab.com/\""
+            buildConfigField "String", "media_url", "\"http://dashboard.mydigicab.com/storage/uploads/\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:leanback-v17:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.github.atu09:My-Utility:1.6'
+    implementation 'com.github.atu09:Connector:1.5'
+    implementation 'com.github.atu09:MyPicker:1.2'
+    implementation 'in.cubestack.android.lib:storm:1.0g'
+}

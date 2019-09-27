@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Digicab LED</string>
+    <string name="file_provider_authority">com.digicab.led.fileprovider</string>
+
+    <string name="beginJourney">Let\'s Begin the Journey</string>
+    <string name="accountNumber">Your Account Number…</string>
+    <string name="taxiNumber">Your Taxi Number…</string>
+    <string name="cannotProceed">You cannot proceed until you configure your Taxi Number.</string>
+    <string name="configure">Configure</string>
+    <string name="retry">Retrying in %d seconds</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="managePreview">Manage preview of screen</string>
+    <string name="screenWidth">Screen Width (In Pixels)</string>
+    <string name="screenHeight">Screen Height (In Pixels)</string>
+    <string name="xPosition">X (Screen Position)</string>
+    <string name="yPosition">Y (Screen Position)</string>
+
+    <string name="loading">Loading, Please wait.</string>
+    <string name="syncing">Please wait, sync in progress.</string>
+    <string name="syncCompleted">Sync has been completed, you\'re good to go now.</string>
+    <string name="saveFailure">Failed to save file, please try again.</string>
+    <string name="downloadFailure">Failed to download file, please try again.</string>
+    <string name="failureConnect">Failed to connect!</string>
+    <string name="checkInternet">Check your internet connectivity!</string>
+    <string name="errorSomething">Something went wrong, Please try again.</string>
+    <string name="googlePlayServiceError">Update Google Play Service, Try again later.</string>
+    <string name="permissionIsRequired">These permissions required to proceed. Please allow them.</string>
+    <string name="configureLocation">Do you want to configure your location settings?</string>
+    <string name="settings">Go to Settings</string>
+
+</resources>
